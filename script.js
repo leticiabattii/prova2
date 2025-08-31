@@ -1,8 +1,8 @@
 const fs = require('fs')
-const { v4: uuid } = require('uuid');
+const { v4: uuidv4 } = require('uuid');
 
 function adicionarLog(nomeAluno){
-    const idUnico = uuid();
+    const idUnico = uuidv4();
     const dataHora = new Date().toLocaleString("pt-BR");
     const mensagem = `${idUnico}, ${dataHora}, ${nomeAluno}/n`;
 
@@ -15,4 +15,4 @@ function adicionarLog(nomeAluno){
     });
 }
 
-adicionarLog("Letícia Abatti Vaz")
+adicionarLog("Letícia Abatti")
